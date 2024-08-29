@@ -13,6 +13,10 @@ ul {
     list-style: none;
 }
 
+.carousel {
+    animation: autoplay 8s linear 1s infinite alternate;
+}
+
 .carousel-item {
     width: 30vw;
     aspect-ratio: 1/1;
@@ -69,4 +73,19 @@ ul {
 a {
     text-decoration: none;
     color: transparent;
+}
+
+@keyframes autoplay {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-30vw);
+    }
+    66.66% {
+        transform: translateX(-60vw);
+    }
+    100% {
+        transform: translateX(-90vw);
+    }
 }
