@@ -1,3 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 30px;
+}
+
 ul {
+    display: flex;
     list-style: none;
+}
+
+.carousel-item {
+    width: 30vw;
+    aspect-ratio: 1/1;
+}
+
+.first {
+    background-color: antiquewhite;
+}
+
+.second {
+    background-color: aquamarine;
+}
+
+.third {
+    background-color: thistle;
+}
+
+.fourth {
+    background-color: coral;
+}
+
+.carousel-wrapper {
+    display: flex;
+    border: solid;
+    width: 30vw;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.control-dots {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.control-dots:hover {
+    filter: drop-shadow(0 0 5px black);
+    cursor: pointer;
+}
+
+.controls {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: transparent;
 }
